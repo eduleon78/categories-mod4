@@ -1,7 +1,7 @@
 (function () {
   'use strict';
-    
-    angular.module('MenuApp')
+
+  angular.module('MenuApp')
     .component('categories', {
       templateUrl: 'src/templates/categories.component.html',
       controller: CategoriesComponentController,
@@ -9,12 +9,12 @@
         items: '<'
       }
     });
-    
-    CategoriesComponentController.$inject = ['MenuDataService'];
-    
-    function CategoriesComponentController(MenuDataService) {
-        
-        var $ctrl = this;
-    }
-    
+
+  CategoriesComponentController.$inject = ['MenuDataService'];
+
+  function CategoriesComponentController(MenuDataService) {
+
+    var $ctrl = this;
+  }
+
 })();
